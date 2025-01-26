@@ -166,3 +166,11 @@ font-size: 20px;
     text-decoration: none;
     color: black;
 }
+@media screen and (max-width: 768px) {
+    #features{
+        flex-direction: row;
+    }
+    .header{
+        flex-direction: column;
+    }
+}
