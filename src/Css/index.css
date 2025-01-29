@@ -167,3 +167,258 @@ font-size: 20px;
     text-decoration: none;
     color: black;
 }
+
+.pricing{
+    margin-top: 100px;
+}
+
+.pricing, .grid-price, .row, .cont{
+    width: 100%;
+    height: 100%;
+}
+
+.work-pricing{
+    padding: 50px;
+}
+
+.grid-price{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    gap: 14px;
+}
+
+.pack-container {
+    position: relative;
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #212121;
+    border: 1px solid #fff;
+    padding: 1.6rem;
+    color: #fff;
+    transition: .3s ease;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  .pack-container:hover{
+    transform: translateY(-4px);
+  }
+  
+  .header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .title {
+    display: block;
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: #fff
+  }
+  
+  .price-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    font-family: sans-serif;
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  
+  .price-container span:first-child {
+    margin-top: 10px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .price-container span:last-child {
+    align-self: flex-end;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .lists {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .list span {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background-color: rgba(255, 255, 255, 0.185);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list span svg {
+    height: 12px;
+    width: 12px;
+  }
+  
+  .list p {
+    display: block;
+    font-family: sans-serif;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .button-container button {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #000;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+  }
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+
+  #mobile{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+  }
+
+  @media screen and (max-width:786px) {
+    #mobile{
+        display: block;
+    }
+
+    .grid-price, .items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+        margin: 0px;
+    }
+
+    #hero p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    #hero button{
+        margin-top: 100px;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100vh;
+        background: #ccc;
+        z-index: 9;
+        transition: .4s ease;
+        transform: translateX(-100%);
+    }
+
+    .show{
+        transform: translateX(0%) !important;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 30px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 15px;
+    }
+  }
