@@ -8,7 +8,6 @@ padding: 0;
 }
 
 header {
-
 padding: 10px 0;
 text-align: center;
 height: 100px;
@@ -41,9 +40,11 @@ background-size: cover;
 }
 
 #hero h2 {
-font-size: 90px;
+font-size: 6rem;
+height: 20px;
+font-weight: bold;
 color: rgb(250, 243, 243);
-padding: 90px;
+margin: 90px;
 }
 
 #hero p {
@@ -51,10 +52,10 @@ font-size: 30px;
 color: white;
 }
 
-    .home-button{
-       display: flex;
-       justify-content: center;
-    }
+.home-button{
+    display: flex;
+    justify-content: center;
+}
 
 #hero button, .view-but button {
 font-size: 1em;
@@ -72,14 +73,14 @@ gap: 10px;
 align-items: center;
 }
 
-
-
 #hero button:hover, .view-but button:hover{
     transform: translateY(-6px);
-    background-color: white;
     color: black;
 }
 
+#hero button:hover{
+    color: #fff;
+}
 
 #features {
 padding: 20px;
@@ -165,12 +166,4 @@ font-size: 20px;
 .view-but button a{
     text-decoration: none;
     color: black;
-}
-@media screen and (max-width: 768px) {
-    #features{
-        flex-direction: row;
-    }
-    .header{
-        flex-direction: column;
-    }
 }
